@@ -153,6 +153,13 @@ class FeaturesSettings(DataClassJsonMixin):
 
 
 @dataclass()
+class Watermark(DataClassJsonMixin):
+    link: Optional[str] = None
+    message: Optional[str] = None
+    image: Optional[str] = None
+
+
+@dataclass()
 class UISettings(DataClassJsonMixin):
     name: str
     description: str = ""
@@ -164,6 +171,8 @@ class UISettings(DataClassJsonMixin):
     theme: Optional[Theme] = None
     # Optional custom CSS file that allows you to customize the UI
     custom_css: Optional[str] = None
+    # Watermark
+    watermark: Optional[Watermark] = None
 
 
 @dataclass()

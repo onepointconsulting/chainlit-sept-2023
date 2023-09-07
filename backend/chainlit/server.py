@@ -192,7 +192,10 @@ def get_html_template():
 
     js = None
     if config.ui.theme:
-        js = f"""<script>window.theme = {json.dumps(config.ui.theme.to_dict())}</script>"""
+        js = f"""
+<script>window.theme = {json.dumps(config.ui.theme.to_dict())}</script>
+<script>window.watermark = {json.dumps(config.ui.watermark.to_dict())}</script>
+"""
 
     css = None
     if config.ui.custom_css:

@@ -8,10 +8,11 @@ import { settingsState } from 'state/settings';
 interface Props {
   width?: number;
   style?: React.CSSProperties;
+  image?: string;
 }
 
-export const Logo = ({ width, style }: Props) => {
+export const Logo = ({ width, style, image }: Props) => {
   const { theme } = useRecoilValue(settingsState);
-  const src = theme === 'light' ? LogoLight : LogoDark;
+  const src = image ? image : theme === 'light' ? LogoLight : LogoDark;
   return <img src={src} style={style} width={width || 40} />;
 };
