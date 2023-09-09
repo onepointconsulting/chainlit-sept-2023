@@ -10,6 +10,7 @@ import Home from 'pages/Home';
 import Login from 'pages/Login';
 import Page from 'pages/Page';
 import Readme from 'pages/Readme';
+import Upload from 'pages/Upload';
 
 export const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ export const router = createBrowserRouter([
   {
     path: '/api/auth/callback',
     element: <AuthCallback />
+  },
+  {
+    path: '/upload',
+    element: <Upload />
   },
   {
     path: '*',
