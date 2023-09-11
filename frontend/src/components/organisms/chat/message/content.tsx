@@ -143,7 +143,9 @@ export default memo(function MessageContent({
       >
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
-          className="markdown-body"
+          className={`markdown-body ${
+            authorIsUser ? 'user-message' : 'generated-message'
+          }`}
           components={{
             a({ children, ...props }) {
               const name = children[0] as string;
