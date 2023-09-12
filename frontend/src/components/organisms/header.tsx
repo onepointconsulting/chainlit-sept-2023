@@ -159,7 +159,7 @@ export default function Header() {
               <img
                 src="https://www.onepointltd.com/wp-content/uploads/2020/06/logo-one-point.png"
                 alt="Onepoint Consulting Ltd"
-                style={{ display: 'block' }}
+                style={{ display: 'block', margin: '0 1.5em 0 0' }}
               />
             </a>
           </Box>
