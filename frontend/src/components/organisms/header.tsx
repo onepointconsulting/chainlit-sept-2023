@@ -154,6 +154,15 @@ export default function Header() {
         }}
       >
         <Stack alignItems="center" direction="row">
+          <Box>
+            <a href="https://www.onepointltd.com">
+              <img
+                src="https://www.onepointltd.com/wp-content/uploads/2020/06/logo-one-point.png"
+                alt="Onepoint Consulting Ltd"
+                style={{ display: 'block' }}
+              />
+            </a>
+          </Box>
           <Nav
             hasDb={!!pSettings?.project?.database}
             hasReadme={!!pSettings?.markdown}
