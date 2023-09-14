@@ -69,7 +69,7 @@ const Page = ({ children }: Props) => {
         >
           <h1>Data & Analytics Self-Assessment</h1>
           <h2>
-            Powered by Onepoint's & Analytics Body of Knowledge and ChatGPT
+            Powered by Onepoint's Data & Analytics Body of Knowledge and ChatGPT
           </h2>
         </Stack>
       </Stack>
